@@ -33,10 +33,10 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To ILHAM STORE SCRIPT ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Welcome To SABDO PALON SCRIPT ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server"
-echo -e "  Auther : ${green}ILHAM AGASATYA ® ${NC}${YELLOW}(${NC} ${green} ILHAM STORE ${NC}${YELLOW})${NC}"
-echo -e " © Recode By My Self ILHAM STORE ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "  Auther : ${green}SABDO STORE ® ${NC}${YELLOW}(${NC} ${green} SPS ${NC}${YELLOW})${NC}"
+echo -e " © Recode By My SABDO ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
