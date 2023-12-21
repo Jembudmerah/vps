@@ -17,6 +17,10 @@ GRAY="\e[1;30m"
 NC='\e[0m'
 red='\e[1;31m'
 green='\e[0;32m'
+ISP=$(cat /etc/xray/isp)
+CITY=$(cat /etc/xray/city)
+ipsaya=$(wget -qO- /ipinfo.oi/ip)
+
 TIMES="10"
 CHATID="5795571992"
 KEY="6386703502:AAGiUjNES9aXxBWzuqNTiqDBDqd0uLcGFAs"
@@ -317,13 +321,13 @@ restart_system(){
 <code>────────────────────</code>
 <b>⚡AUTOSCRIPT PREMIUM⚡</b>
 <code>────────────────────</code>
-<code>Owner    :</code><code>$username</code>
+<code>Owner    :</code><code>$USRSC</code>
 <code>Domain   :</code><code>$domain</code>
-<code>IPVPS    :</code><code>$MYIP</code>
+<code>IPVPS    :</code><code>$ipsaya</code>
 <code>ISP      :</code><code>$ISP</code>
-<code>DATE     :</code><code>$DATEVPS</code>
+<code>CITY     :</code><code>$CITY</code>
 <code>Time     :</code><code>$TIMEZONE</code>
-<code>Exp Sc.  :</code><code>$exp</code>
+<code>Exp Sc.  :</code><code>$EXPSC</code>
 <code>────────────────────</code>
 <b> SABDO PALON SCRIPT  </b>
 <code>────────────────────</code>
@@ -415,7 +419,7 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
     wget -O /etc/systemd/system/runn.service "${REPO}limit/runn.service" >/dev/null 2>&1
     #chmod +x /usr/local/bin/xray
     domain=$(cat /etc/xray/domain)
-    IPVS=$(cat /etc/xray/ipvps)
+    IPVPS=$(cat /etc/xray/ipvps)
     print_success "Core Xray 1.8.1 Latest Version"
     
     # Settings UP Nginix Server
@@ -884,7 +888,7 @@ cat >/etc/cron.d/xp_all <<-END
 	cat >/etc/cron.d/logclean <<-END
 		SHELL=/bin/sh
 		PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-		*/20 * * * * root /usr/local/sbin/clearlog
+		*/59 * * * * root /usr/local/sbin/clearlog
 		END
     chmod 644 /root/.profile
 	
