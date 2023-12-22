@@ -1,8 +1,6 @@
 SABDO PALON TUNELING 
 
-CONTACT FOR ORDERS :
-WA :https://wa.me/6285161256106
-TELE :@Sabdopalonstore
+CONTACT FOR ORDERS : https://wa.me/6285161256106
 
 ### INSTALL SCRIPT 
 <pre><code>apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/Jembudmerah/vps/main/premi.sh && chmod +x premi.sh && ./premi.sh
