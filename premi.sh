@@ -22,8 +22,8 @@ CITY=$(cat /etc/xray/city)
 ipsaya=$(wget -qO- /ipinfo.oi/ip)
 
 TIMES="10"
-CHATID="5795571992"
-KEY="6386703502:AAGiUjNES9aXxBWzuqNTiqDBDqd0uLcGFAs"
+CHATID="6665982160"
+KEY="6605796922:AAF44gjqZZlF1bDJGQ_bm7Q6ETkeIA0gjlE"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 # ===================
 clear
